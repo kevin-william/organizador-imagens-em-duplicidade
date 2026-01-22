@@ -92,7 +92,7 @@ python -m pytest test_organizador_imagens.py -v
 
 ## Dependências
 
-- **Pillow** (>=10.0.0): Processamento de imagens
+- **Pillow** (>=10.2.0): Processamento de imagens
 - **imagehash** (>=4.3.1): Cálculo de hash perceptual
 
 ## Logs

@@ -10,12 +10,14 @@ import tempfile
 import shutil
 from pathlib import Path
 from PIL import Image
-import hashlib
 
-# Adicionar o diretório pai ao path para importar o módulo
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
-from organizador_imagens import OrganizadorImagens, SUPPORTED_FORMATS
+# Importar o módulo - funciona se executado do mesmo diretório
+try:
+    from organizador_imagens import OrganizadorImagens, SUPPORTED_FORMATS
+except ImportError:
+    # Adicionar o diretório pai ao path se necessário
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from organizador_imagens import OrganizadorImagens, SUPPORTED_FORMATS
 
 
 class TestOrganizadorImagens(unittest.TestCase):
