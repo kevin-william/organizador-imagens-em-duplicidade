@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Organizador de Imagens - Test artifacts and output folders
+validadas/
+repetidas/
+organizador_imagens.log
